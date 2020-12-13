@@ -165,9 +165,9 @@ document.getElementById('txt').innerHTML = txtlist[Math.ceil(Math.random()*txtli
 $(function(){
 	$(window).scroll(function() {
 		if ( $(this).scrollTop() > 10 ){
-			$('.top2').fadeIn(333);
+			$('#monthName').animate({'opacity':0.8},333);
 		} else {
-			$('.top2').fadeOut(333);
+			$('#monthName').animate({'opacity':1},333);
 		}
 	}).scroll();
 });
