@@ -69,41 +69,41 @@ font-weight:500;
 }
 
 .claendar #dayNumber {
-margin-top:20px;
+margin-top:10px;
 font-size:100px;
 color:#333;
 font-weight:900;
 }
 
 .claendar #year {
-margin-top:20px;
+margin-top:10px;
 font-size:30px;
 color:#999;
 font-weight:700;
 }
 .claendar #txt {
-margin-top:20px;
+margin-top:10px;
 font-size:30px;
 color:#888;
 font-weight:500;
 max-width:80%;
 }
 .claendar #greet {
-margin-bottom:20px;
+margin-bottom:10px;
 font-size:45px;
 color:#888;
 font-weight:500;
 width:100%;
 }
 .claendar #greet {
-margin-top:20px;
+margin-top:10px;
 font-size:45px;
 color:#888;
 font-weight:500;
 width:100%;
 }
 .claendar #time {
-margin-bottom:20px;
+margin-bottom:10px;
 font-size:35px;
 color:#888;
 font-weight:500;
@@ -166,34 +166,34 @@ font-weight:500;
 }
 
 .claendar #dayNumber {
-margin-top:20px;
+margin-top:10px;
 font-size:100px;
 color:#fff;
 font-weight:900;
 }
 
 .claendar #year {
-margin-top:20px;
+margin-top:10px;
 font-size:30px;
 color:#fff;
 font-weight:700;
 }
 .claendar #txt {
-margin-top:20px;
+margin-top:10px;
 font-size:30px;
 color:#fff;
 font-weight:500;
 max-width:80%;
 }
 .claendar #greet {
-margin-top:20px;
+margin-top:10px;
 font-size:45px;
 color:#fff;
 font-weight:500;
 width:100%;
 }
 .claendar #time {
-margin-bottom:20px;
+margin-bottom:10px;
 font-size:35px;
 color:#fff;
 font-weight:500;
@@ -247,7 +247,7 @@ document.getElementById('monthNamef').innerHTML = (today.getMonth()+1) + '月';
 document.getElementById('dayName').innerHTML = '星期' + daylist[today.getDay()];
 document.getElementById('dayNumber').innerHTML = today.getDate() ;
 document.getElementById('year').innerHTML = today.getFullYear() ;
-document.getElementById('greet').innerHTML = greetlist[today.getHours()] ;
+document.getElementById('greet').innerHTML = greetlist[today.getHours()] + '!' ;
 document.getElementById('time').innerHTML = pmlist[today.getHours()] + checkhour(today.getHours()) + ':' + checki(today.getMinutes());
 }
 var timer = setInterval(function() {
