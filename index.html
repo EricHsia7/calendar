@@ -204,7 +204,7 @@ $(function(){
 </script>
 <script>
 $( document ).ready(function() {
-    $('.background').attr('src','https://source.unsplash.com/1920x1080?nature');
+    $('.background').attr('src','https://source.unsplash.com/' + $( window ).width() + 'x' + $( window ).height() + '?nature');
 });
 </script>
 </body>
