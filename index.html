@@ -164,10 +164,10 @@ document.getElementById('txt').innerHTML = txtlist[Math.ceil(Math.random()*txtli
 //捲動後透明
 $(function(){
 	$(window).scroll(function() {
-		if ( $(this).scrollTop() > 10 ){
-			$('#monthName').animate({'opacity':0.8},333);
+		if ( $(this).scrollTop() > 1 ){
+			$('#monthName').animate({'opacity':0.8},11);
 		} else {
-			$('#monthName').animate({'opacity':1},333);
+			$('#monthName').animate({'opacity':1},11);
 		}
 	}).scroll();
 });
