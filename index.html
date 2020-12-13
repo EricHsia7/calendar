@@ -191,10 +191,7 @@ var data = '能把在面前行走的機會抓住的人，十有八九都會成�
 var txtlist = data.split("&txt&") ;
 var txtlistl = data.split("&txt&").length ;
 document.getElementById('txt').innerHTML = txtlist[Math.ceil(Math.random()*txtlistl)] ;
-//捲動後透明&模糊
-function set() {
-$('.bgblur').css({'-webkit-backdrop-filter' : 'blur(' + (5+($( window ).scrollTop()/$('body').height()*20)) + 'px)' , 'backdrop-filter' : 'blur(' + (5+($( window ).scrollTop()/$('body').height()*20)) + 'px)','max-width': (100-($( window ).scrollTop()/height*20)) + '%', 'max-height': (100-($( window ).scrollTop()/height*20)) + '%'});
-}
+//捲動後透明
 $(function(){
 	$(window).scroll(function() {
 		if ( $(this).scrollTop() > 1 ){
@@ -202,7 +199,6 @@ $(function(){
 		} else {
 			$('#monthName').stop().animate({'opacity':1},111);
 		}
-		set();
 	}).scroll();
 });
 </script>
