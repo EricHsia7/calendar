@@ -244,7 +244,8 @@ var txtlist = data.split("&txt&") ;
 var txtlistl = data.split("&txt&").length ;
 document.getElementById('txt').innerHTML = txtlist[Math.ceil(Math.random()*txtlistl)] ;
 setInterval(settime, 500);
-//捲動後透明
+</script>
+<script>
 $(function(){
 	$(window).scroll(function() {
 		if ( $(this).scrollTop() > 1 ){
