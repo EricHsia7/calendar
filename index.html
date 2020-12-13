@@ -244,7 +244,9 @@ document.getElementById('year').innerHTML = today.getFullYear() ;
 document.getElementById('greet').innerHTML = greetlist[today.getHours()] ;
 document.getElementById('time').innerHTML = pmlist[today.getHours()] + checkhour(today.getHours()) + ':' + checki(today.getMinutes());
 }
-setInterval("settime()",1);
+var timer = setInterval(function() {
+    settime();
+  }, 100);
 </script>
 <script>
 $(function(){
