@@ -5,6 +5,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <style>
+* {-webkit-transition:0.8s;transition:0.8s;}
 body {background:#fcfcfc;}
 .background {
 position:fixed;
@@ -252,7 +253,7 @@ document.getElementById('time').innerHTML = pmlist[today.getHours()] + checkhour
 }
 var timer = setInterval(function() {
     settime();
-  }, 100);
+  }, 500);
 </script>
 <script>
 $(function(){
