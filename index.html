@@ -167,7 +167,7 @@ max-width:80%;
   }
 </style>
 <body>
-<img src="https://source.unsplash.com/3840x2160?nature" class="background">
+<img src="" class="background">
 <div class="bgblur"></div>
 <div class="claendar">
 <div id="monthNamef"></div>
@@ -200,6 +200,11 @@ $(function(){
 			$('#monthName').stop().animate({'opacity':1},111);
 		}
 	}).scroll();
+});
+</script>
+<script>
+$( document ).ready(function() {
+    $('.background').attr('src','https://source.unsplash.com/3840x2160?nature');
 });
 </script>
 </body>
