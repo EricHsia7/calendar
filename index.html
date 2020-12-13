@@ -20,6 +20,18 @@ font-family: 'Noto Sans TC', sans-serif;
 }
 
 .claendar #monthName {
+position:fixed;
+top:0px;
+left:0px;
+padding:5px 0px;
+background:#ff6331;
+color:#fff;
+font-size:30px;
+width:100%;
+font-weight:700;
+}
+  
+.claendar #monthNamef {
 position:relative;
 top:0px;
 left:0px;
@@ -74,7 +86,7 @@ font-family: 'Noto Sans TC', sans-serif;
 }
 
 .claendar #monthName {
-position:relative;
+position:fixed;
 top:0px;
 left:0px;
 padding:5px 0px;
@@ -85,6 +97,18 @@ width:100%;
 font-weight:700;
 }
 
+.claendar #monthNamef {
+position:relative;
+top:0px;
+left:0px;
+padding:5px 0px;
+background:#ff310d;
+color:#fff;
+font-size:30px;
+width:100%;
+font-weight:700;
+}
+ 
 .claendar #dayName {
 margin-top:20px;
 font-size:20px;
@@ -116,6 +140,7 @@ max-width:80%;
 </style>
 <body>
 <div class="claendar">
+<div id="monthNamef"></div>
 <div id="monthName"></div>
 <div id="dayName">請開啟JavaScript！</div>
 <div id="dayNumber"></div>
