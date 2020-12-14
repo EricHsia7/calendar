@@ -270,7 +270,10 @@ document.getElementById('time').innerHTML = pmlist[today.getHours()] + checkhour
 }
 $( document ).ready(function() {
     $('.background').delay(800).attr('src','https://source.unsplash.com/' + Math.round($( window ).width()*0.5) + 'x' + Math.round($( window ).height()*0.5) + '?nature');
+    window.setTimeout(function () {
     window.setInterval(settime, 500);
+  }, 3000);
+    
 });
 </script>
 <script>
