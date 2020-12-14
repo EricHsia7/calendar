@@ -5,6 +5,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <style>
+.loaddiv {
+width:100px;
+height:30px;
+background: rgb(227,227,227);
+background: linear-gradient(90deg, rgba(227,227,227,1) 0%, rgba(168,168,168,1) 7%, rgba(177,177,177,1) 13%, rgba(227,227,227,1) 25%, rgba(227,227,227,1) 100%);
+background-size:900%;
+background-position: 100% 0%;
+animation: load 3.8s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+border-radius:99em;
+}
+
+@keyframes load {
+  0% {
+    background-position: 100% 0%;
+  }
+  99.99% {
+    background-position: -30% 0%;
+  }
+  100% {
+  background-position: 100% 0%;
+  }
+}
 body {background:#fcfcfc;}
 .background {
 position:fixed;
@@ -198,13 +222,13 @@ width:100%;
 <img src="" class="background">
 <div class="bgblur"></div>
 <div class="claendar">
-<div id="monthNamef">--</div>
-<div id="monthName">--</div>
-<div id="dayName">--</div>
-<div id="dayNumber">--</div>
-<div id="year">--</div>
-<div id="greet">--</div>
-<div id="time">--</div>
+<div id="monthNamef"><div class="loaddiv"></div></div>
+<div id="monthName"><div class="loaddiv"></div></div>
+<div id="dayName"><div class="loaddiv"></div></div>
+<div id="dayNumber"><div class="loaddiv"></div></div>
+<div id="year"><div class="loaddiv"></div></div>
+<div id="greet"><div class="loaddiv"></div></div>
+<div id="time"><div class="loaddiv"></div></div>
 <center><p id="txt">--</p></center>
 </div>
 <script>
