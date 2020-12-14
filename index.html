@@ -222,14 +222,16 @@ width:100%;
 <img src="" class="background">
 <div class="bgblur"></div>
 <div class="claendar">
-<div id="monthNamef">--</div>
-<div id="monthName">--</div>
-<div id="dayName">--</div>
-<div id="dayNumber">--</div>
-<div id="year">--</div>
-<div id="greet">--</div>
-<div id="time">--</div>
-<center><p id="txt">--</p></center>
+<center>
+<div id="monthNamef"><div class="loaddiv"></div></div>
+<div id="monthName"><div class="loaddiv"></div></div>
+<div id="dayName"><div class="loaddiv"></div></div>
+<div id="dayNumber"><div class="loaddiv"></div></div>
+<div id="year"><div class="loaddiv"></div></div>
+<div id="greet"><div class="loaddiv"></div></div>
+<div id="time"><div class="loaddiv"></div></div>
+</center>
+<center><p id="txt"><div class="loaddiv"></div></p></center>
 </div>
 <script>
 //日期
@@ -266,7 +268,10 @@ document.getElementById('year').innerHTML = today.getFullYear() ;
 document.getElementById('greet').innerHTML = greetlist[today.getHours()] ;
 document.getElementById('time').innerHTML = pmlist[today.getHours()] + checkhour(today.getHours()) + ':' + checki(today.getMinutes());
 }
-window.setInterval(settime, 500);
+$( document ).ready(function() {
+    $('.background').delay(800).attr('src','https://source.unsplash.com/' + Math.round($( window ).width()*0.5) + 'x' + Math.round($( window ).height()*0.5) + '?nature');
+    window.setInterval(settime, 500);
+});
 </script>
 <script>
 $(function(){
@@ -277,11 +282,6 @@ $(function(){
 			$('#monthName').stop().animate({'opacity':1},111);
 		}
 	}).scroll();
-});
-</script>
-<script>
-$( document ).ready(function() {
-    $('.background').delay(800).attr('src','https://source.unsplash.com/' + Math.round($( window ).width()*0.5) + 'x' + Math.round($( window ).height()*0.5) + '?nature');
 });
 </script>
 </body>
