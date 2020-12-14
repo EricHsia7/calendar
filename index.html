@@ -273,6 +273,7 @@ $( document ).ready(function() {
     $('.background').delay(800).attr('src','https://source.unsplash.com/' + Math.round($( window ).width()*0.5) + 'x' + Math.round($( window ).height()*0.5) + '?nature');
     window.setTimeout(function () {
     window.setInterval(settime, 500);
+    document.getElementById('txt').innerHTML = '' ;
     document.getElementById('txt').innerHTML = txtlist[Math.ceil(Math.random()*txtlistl)] ;
   }, 8000);
     
