@@ -250,6 +250,8 @@ width:100%;
 <center><span id="txt"><div class="loaddiv" style="height:35px;width:70%; animation-delay: 0.40s;"></div><div class="loaddiv" style="height:35px;width:63%; animation-delay: 0.45s;"></div></span></center>
 </div>
 <script>
+var getUrlString = location.href ;
+var url = new URL(getUrlString) ;
 //日期
 var daylist = ['日','一','二','三','四','五','六']
 var greetlist = ['早安','早安','早安','早安','早安','早安','早安','早安','午安','午安','午安','午安','午安','午安','午安','午安','晚安','晚安','晚安','晚安','晚安','晚安','晚安','晚安'] ;
@@ -287,7 +289,12 @@ $( document ).ready(function() {
     $('.background').delay(800).attr('src','https://source.unsplash.com/' + Math.round($( window ).width()*0.5) + 'x' + Math.round($( window ).height()*0.5) + '?nature');
     window.setTimeout(function () {
     window.setInterval(settime, 500);
-    document.getElementById('txt').innerHTML = '<p style="max-width:80%;">' + txtlist[Math.ceil(Math.random()*txtlistl)] + '</p>' ;
+    if(url.searchParams.get('display') === "1") {
+	document.getElementById('txt').innerHTML = '<p style="max-width:80%;">' + url.searchParams.get('txt') + '</p>' ;
+	}
+    else {
+	    document.getElementById('txt').innerHTML = '<p style="max-width:80%;">' + txtlist[Math.ceil(Math.random()*txtlistl)] + '</p>' ;
+    }
   }, 5000);
     
 });
