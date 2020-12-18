@@ -506,6 +506,12 @@ document.getElementById('dayNumber').innerHTML = today.getDate() ;
 document.getElementById('year').innerHTML = today.getFullYear() ;
 document.getElementById('greet').innerHTML = greetlist[today.getHours()] ;
 document.getElementById('time').innerHTML = pmlist[today.getHours()] + checkhour(today.getHours()) + ':' + checki(today.getMinutes());
+if(today.getMonth()+1 === "1" && today.getDate() === "1" && today.getSecond() <= 30) {
+   $('.fireworkbg').fadeIn(111);
+   }
+   else {
+   $('.fireworkbg').fadeOut(1);
+   }
 }
 $( document ).ready(function() {
     $('.background').delay(800).attr('src','https://source.unsplash.com/' + Math.round($( window ).width()*0.5) + 'x' + Math.round($( window ).height()*0.5) + '?nature');
