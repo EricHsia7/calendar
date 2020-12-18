@@ -508,7 +508,7 @@ document.getElementById('greet').innerHTML = greetlist[today.getHours()] ;
 document.getElementById('time').innerHTML = pmlist[today.getHours()] + checkhour(today.getHours()) + ':' + checki(today.getMinutes());
 var xtime = (today.getMonth()+1) + '/' + today.getDate() ;
 var xtimesec = 
-if(xtime === "12/18" && today.getMinutes() <= 1 && today.getSecond() <= 30 ) {
+if(xtime === "12/18") {
    $('.fireworkbg').fadeIn(111);
    }
    else {
