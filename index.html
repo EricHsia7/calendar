@@ -506,7 +506,8 @@ document.getElementById('dayNumber').innerHTML = today.getDate() ;
 document.getElementById('year').innerHTML = today.getFullYear() ;
 document.getElementById('greet').innerHTML = greetlist[today.getHours()] ;
 document.getElementById('time').innerHTML = pmlist[today.getHours()] + checkhour(today.getHours()) + ':' + checki(today.getMinutes());
-if(today.getMonth()+1 === "1" && today.getDate() === "1" && today.getSecond() <= 30) {
+var xtime = (today.getMonth()+1) + '/' + today.getDate() ;
+if(xtime === "1/1") {
    $('.fireworkbg').fadeIn(111);
    }
    else {
