@@ -524,8 +524,10 @@ document.getElementById('year').innerHTML = today.getFullYear() ;
 document.getElementById('greet').innerHTML = greetlist[today.getHours()] ;
 document.getElementById('time').innerHTML = pmlist[today.getHours()] + checkhour(today.getHours()) + ':' + checki(today.getMinutes());
 var xtime = (today.getMonth()+1) + '/' + today.getDate() ;
-if(xtime === "1/1" && firework === "0") {
+if(firework === "0") {
+   if(xtime === "1/1"||xtime === "12/18") {
    $('.fireworkbg,.fireworktxt').fadeIn(333);
+   }
    }
    else {
    }
