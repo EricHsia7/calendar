@@ -137,6 +137,14 @@ display:none;
 	animation: explosion 2.3s 1.1s ease-in-out infinite;
 }
 
+.fireworktxt {
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	color:#fff;
+	font-size:35px;
+}
 .loaddiv {
 width:100px;
 height:30px;
@@ -470,7 +478,7 @@ width:100%;
 	<div class="explosion"></div>
 </div>
 </div>
-
+<span class="fireworktxt">新年快樂！</span>
 <script>
 var getUrlString = location.href ;
 var url = new URL(getUrlString) ;
@@ -508,10 +516,10 @@ document.getElementById('greet').innerHTML = greetlist[today.getHours()] ;
 document.getElementById('time').innerHTML = pmlist[today.getHours()] + checkhour(today.getHours()) + ':' + checki(today.getMinutes());
 var xtime = (today.getMonth()+1) + '/' + today.getDate() ;
 if(xtime === "12/18") {
-   $('.fireworkbg').fadeIn(111);
+   $('.fireworkbg,.fireworktxt').fadeIn(111);
    }
    else {
-   $('.fireworkbg').fadeOut(1);
+   $('.fireworkbg,.fireworktxt').fadeOut(1);
    }
 }
 $( document ).ready(function() {
