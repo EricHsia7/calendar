@@ -480,6 +480,7 @@ width:100%;
 	<div class="explosion"></div>
 	<div class="explosion"></div>
 </div>
+	<a href="javascript:closefirework()">關閉</a>
 </div>
 <span class="fireworktxt"><center>新年快樂!</center></span>
 <script>
@@ -508,6 +509,9 @@ else {
 return iii ;	
 }
 }
+function closefirework() {
+	$('.fireworkbg,.fireworktxt').fadeOut(555);
+}
 function settime() {
 var today=new Date();
 document.getElementById('monthName').innerHTML = (today.getMonth()+1) + '月';
@@ -519,7 +523,7 @@ document.getElementById('greet').innerHTML = greetlist[today.getHours()] ;
 document.getElementById('time').innerHTML = pmlist[today.getHours()] + checkhour(today.getHours()) + ':' + checki(today.getMinutes());
 var xtime = (today.getMonth()+1) + '/' + today.getDate() ;
 if(xtime === "12/18") {
-   $('.fireworkbg,.fireworktxt').fadeIn(111);
+   $('.fireworkbg,.fireworktxt').fadeIn(333);
    }
    else {
    }
