@@ -73,7 +73,6 @@ display:none;
 	top: 100%;
 	height: 40px;
 	background-color: #fff;
-	animation: explosioncolor 3s ease-in-out infinite;
 }
 @keyframes explosion {
 	0% {
@@ -103,7 +102,7 @@ display:none;
 	transform: scale(1.3);
 }
 #firework1 .explosion::before {
-	animation: explosion 2s ease-in-out infinite;
+	animation: explosioncolor 3s ease-in-out infinite ,explosion 2s ease-in-out infinite;
 }
 
 #firework2 {
@@ -112,7 +111,7 @@ display:none;
 	transform: scale(.7);
 }
 #firework2 .explosion::before {
-	animation: explosion 2.2s .6s ease-in-out infinite;
+	animation: explosioncolor 3s ease-in-out infinite ,explosion 2.2s .6s ease-in-out infinite;
 }
 
 #firework3 {
@@ -121,7 +120,7 @@ display:none;
 	transform: scale(.4);
 }
 #firework3 .explosion::before {
-	animation: explosion 2.1s .8s ease-in-out infinite;
+	animation: explosioncolor 3s ease-in-out infinite ,explosion 2.1s .8s ease-in-out infinite;
 }
 
 #firework4 {
@@ -130,7 +129,7 @@ display:none;
 	transform: scale(.9);
 }
 #firework4 .explosion::before {
-	animation: explosion 3s .9s ease-in-out infinite;
+	animation: explosioncolor 3s ease-in-out infinite ,explosion 3s .9s ease-in-out infinite;
 }
 
 #firework5 {
@@ -139,7 +138,7 @@ display:none;
 	transform: scale(.75);
 }
 #firework5 .explosion::before {
-	animation: explosion 2.1s 1s ease-in-out infinite;
+	animation: explosioncolor 3s ease-in-out infinite ,explosion 2.1s 1s ease-in-out infinite;
 }
 
 #firework6 {
@@ -148,7 +147,7 @@ display:none;
 	transform: scale(.8);
 }
 #firework6 .explosion::before {
-	animation: explosion 2.3s 1.1s ease-in-out infinite;
+	animation: explosioncolor 3s ease-in-out infinite ,explosion 2.3s 1.1s ease-in-out infinite;
 }
 
 .fireworktxt {
