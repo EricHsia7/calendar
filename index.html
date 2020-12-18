@@ -27,6 +27,7 @@ display:none;
 	/* background-color: rgba(0,0,0,.2); */
 	overflow: hidden;
 	border-radius:3px;
+	animation: explosioncolor 3s ease-in-out infinite;
 }
 .explosion:nth-child(1) {
 	transform: rotate(0deg) translateY(-15px);
@@ -42,7 +43,7 @@ display:none;
 }
 .explosion:nth-child(5) {
 	transform: rotate(120deg) translateY(-15px);
-}
+}?
 .explosion:nth-child(6) {
 	transform: rotate(150deg) translateY(-15px);
 }
@@ -82,7 +83,20 @@ display:none;
 		top: -50%;
 	}
 }
-
+@keyframes explosioncolor {
+	0%,100% {
+		background-color: #ff3030;
+	}
+	25% {
+		background-color:#ffe100;
+	}
+	50% {
+		background-color:#00c8ff;
+	}
+	75% {
+		background-color:#c300ff;
+	}
+}
 #firework1 {
 	left: 50%;
 	top: 50%;
