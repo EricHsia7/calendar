@@ -285,8 +285,8 @@ width:100%;
 <script>
 var getUrlString = location.href ;
 var url = new URL(getUrlString) ;
+var deldisplay = url.searchParams.get('effect') ;
 //日期
-var deldisplay = url.searchParams.get('del') ;
 var daylist = ['日','一','二','三','四','五','六']
 var greetlist = ['早安','早安','早安','早安','早安','早安','早安','早安','午安','午安','午安','午安','午安','午安','午安','午安','晚安','晚安','晚安','晚安','晚安','晚安','晚安','晚安'] ;
 var pmlist = ['上午','上午','上午','上午','上午','上午','上午','上午','上午','上午','上午','中午','中午','下午','下午','下午','下午','下午','下午','下午','下午','下午','下午','下午'] ;
