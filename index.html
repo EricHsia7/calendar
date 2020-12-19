@@ -333,9 +333,10 @@ if(del === "0") {
    }
    }
 }
+
 $( document ).ready(function() {
-    $('.background').delay(800).attr('src','https://source.unsplash.com/' + Math.round($( window ).width()*0.5) + 'x' + Math.round($( window ).height()*0.5) + '?nature');
-    $('#xmasimg').delay(800).attr('src','https://erichsia7.github.io/calendar/image/3d4d3508.png');
+    $('.background').delay(1200).attr('src','https://source.unsplash.com/' + Math.round($( window ).width()*0.5) + 'x' + Math.round($( window ).height()*0.5) + '?nature');
+    $('#xmasimg').delay(1200).attr('src','https://erichsia7.github.io/calendar/image/3d4d3508.png');
     window.setTimeout(function () {
     window.setInterval(settime, 500);
     if(url.searchParams.get('display') === "1") {
@@ -344,8 +345,7 @@ $( document ).ready(function() {
     else {
 	    document.getElementById('txt').innerHTML = '<p style="max-width:80%;">' + txtlist[Math.ceil(Math.random()*txtlistl)] + '</p>' ;
     }
-  }, 5000);
-    
+  }, 5000); 
 });
 </script>
 <script>
