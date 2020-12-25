@@ -273,7 +273,7 @@ width:100%;
 </center>
 <center><span id="txt"><div class="loaddiv" style="height:35px;width:70%; animation-delay: 0.40s;"></div><div class="loaddiv" style="height:35px;width:63%; animation-delay: 0.45s;"></div></span></center>
 <br>
-<center id="buttonlist"><div class="loaddiv" style="height:45px;width:45px;animation-delay: 0.42;border-radius:99em;"></div></center>
+<center id="buttonlist"><div class="loaddiv" style="height:45px;width:45px;animation-delay: 0.42;border-radius:99em;margin-left:10px;margin-right:10px;"></div><div class="loaddiv" style="height:45px;width:45px;animation-delay: 0.42;border-radius:99em;margin-left:10px;margin-right:10px;"></div></center>
 <br>
 </div>
 
@@ -343,7 +343,7 @@ $( document ).ready(function() {
     $('#xmasimg').delay(5000).attr('src','https://erichsia7.github.io/calendar/image/3d4d3508.png');
     window.setTimeout(function () {
     window.setInterval(settime, 500);
-    document.getElementById('buttonlist').innerHTML = '<a href="javascript:window.location.reload()"><img src="https://erichsia7.github.io/calendar/image/reload.png" style="height:45px;"></a>' ;
+    document.getElementById('buttonlist').innerHTML = '<a href="javascript:window.location.reload()"><img src="https://erichsia7.github.io/calendar/image/reload.png" style="height:45px;margin-left:10px;margin-right:10px;"></a><a href="https://github.com/EricHsia7/calendar"><img src="https://erichsia7.github.io/calendar/image/github.png" style="height:45px;margin-left:10px;margin-right:10px;"></a>' ;
     if(url.searchParams.get('display') === "1") {
 	document.getElementById('txt').innerHTML = '<p style="max-width:80%;">' + url.searchParams.get('txt') + '</p>' ;
 	}
