@@ -1,0 +1,30 @@
+<style>
+.xmasbg {
+position:fixed;
+left:0px;
+top:0px;
+width:100%;
+height:100%;
+background:rgba(0, 0, 0, 0.8);
+display:none;
+-webkit-backdrop-filter: blur(3px);
+backdrop-filter: blur(3px);
+}
+.xmastxt {
+	color:#fff;
+	font-size:30px;
+	font-weight:500;
+	font-family: 'Noto Sans TC', sans-serif;
+        position:fixed;
+	top:30px;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+</style>
+<div class="xmasbg">
+<center class="xmastxt">聖誕快樂!</center>
+<span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)">
+<img src="" style="transform:scale(1);max-width:90vw;max-height:90vh;width:auto;height:auto;" id="xmasimg">
+</span>
+<a href="javascript:closedel()" style="position:fixed;bottom:30px;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:20px;">關閉</a>
+</div>
