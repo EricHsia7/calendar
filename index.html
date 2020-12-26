@@ -330,6 +330,7 @@ $( document ).ready(function() {
     else {
 	    document.getElementById('txt').innerHTML = '<p style="max-width:80%;">' + txtlist[Math.ceil(Math.random()*txtlistl)] + '</p>' ;
     }
+    $('#effectload').delay(1000).load('https://erichsia7.github.io/calendar/effect/' + effectnamess + '.txt');
   }, 5000); 
 });
 </script>
