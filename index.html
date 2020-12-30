@@ -346,9 +346,9 @@ $( document ).ready(function() {
 $(function(){
 	$(window).scroll(function() {
 		if ( $(this).scrollTop() > 1 ){
-			$('#monthName').stop().animate({'opacity':0.8,'width': $('#monthNamef').width()-10 + 'px' ,'height':32-10 + 'px','top':5,'left':5},111);
+			$('#monthName').stop().animate({'opacity':0.8,'width': $('#monthNamef').width()-10 + 'px' ,'height':$('#monthNamef').height()-10 + 'px','top':5,'left':5},111);
 		} else {
-			$('#monthName').stop().animate({'opacity':1,'width': $('#monthNamef').width() + 'px' ,'height':32 + 'px','top':0,'left':0},111);
+			$('#monthName').stop().animate({'opacity':1,'width': $('#monthNamef').width() + 'px' ,'height':$('#monthNamef').height() + 'px','top':0,'left':0},111);
 		}
 	}).scroll();
 });
