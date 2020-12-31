@@ -328,7 +328,7 @@ effectloadssss = 2 ;
 }
 
 $( document ).ready(function() {
-    $('.background').delay(1000).attr('src','https://source.unsplash.com/' + Math.round($( window ).width()*(today.getMonth()+25)*0.01) + 'x' + Math.round($( window ).height()*(today.getMonth()+25)*0.01) + '?nature');
+    $('.background').delay(1000).attr('src','https://source.unsplash.com/' + Math.round($( window ).width()*((Math.ceil(Math.random()*20))*0.01)+0.30) + 'x' + Math.round($( window ).height()*((Math.ceil(Math.random()*20))*0.01)+0.30) + '?nature');
     $('#xmasimg').delay(5000).attr('src','https://erichsia7.github.io/calendar/image/3d4d3508.png');
     window.setTimeout(function () {
     window.setInterval(settime, 500);
