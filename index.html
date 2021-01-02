@@ -148,6 +148,15 @@ color:#4d4d4d;
 font-weight:500;
 width:100%;
 }
+.readmediv {
+width:100%;
+height:100%;
+background:rgba(0, 0, 0, 0.7);
+position:fixed;
+top:0px;
+left:0px;
+display:none;
+}
   @media (prefers-color-scheme: dark) {
 .loaddiv {
 width:100px;
@@ -271,24 +280,11 @@ width:100%;
 <br>
 <center><span id="buttonlist"><div class="loaddiv" style="height:45px;width:165px;animation-delay: 0.55;"></div></span></center>
 <br>
+</div>
+<div class="readmediv">
 <center>
 <script src="https://gist.github.com/EricHsia7/c24298d84608a11f4fcce0b09365901b.js"></script>
 <style>
-#gist107184641 {
-display:none;
-width:250px;
-}
-#gist107184641 * {
-background:rgba(0, 0, 0, 0);
-color:#333;
-}
-.gist-file {
-background:rgba(0, 0, 0, 0);
-}
-.gist-meta {
-display:none;
-}
- @media (prefers-color-scheme: dark) {
 #gist107184641 {
 display:none;
 width:250px;
@@ -303,10 +299,8 @@ background:rgba(0, 0, 0, 0);
 .gist-meta {
 display:none;
 }
-	}
 </style>
 </center>
-<br>
 </div>
 <span id="effectload"></span>
 <script>
@@ -344,13 +338,11 @@ function closedel() {
 var fns = '1' ;
 function readmemd() {
 if (fns === '1') {
-$('#gist107184641').fadeIn(333);
-$('body').delay(333).animate({'scrollTop': $('#gist107184641').offset().top },888);
+$('#gist107184641,.readmediv').fadeIn(333);
 fns = '2' ;
 }
 else {
-$('#gist107184641').delay(888).fadeOut(333);
-$('body').animate({'scrollTop': 0 },888);
+$('#gist107184641,.readmediv').fadeOut(333);
 fns = '1' ;
 }
 }
