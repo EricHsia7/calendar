@@ -341,6 +341,17 @@ function closedel() {
 	$('#effectload').fadeOut(555);
 	del = "1" ;
 }
+var fns = '1' ;
+function readmemd() {
+if (fns === '1') {
+$('#gist107184641').fadeIn(333);
+fns = '2' ;
+}
+else {
+$('#gist107184641').fadeOut(333);
+fns = '1' ;
+}
+}
 var effectloadssss = 0 ;
 function settime() {
 var today=new Date();
@@ -368,7 +379,7 @@ $( document ).ready(function() {
     $('#xmasimg').delay(5000).attr('src','https://erichsia7.github.io/calendar/image/3d4d3508.png');
     window.setTimeout(function () {
     window.setInterval(settime, 500);
-    document.getElementById('buttonlist').innerHTML = '<a href="javascript:window.location.reload()"><img src="https://erichsia7.github.io/calendar/image/reload.png" style="height:45px;margin-left:10px;margin-right:10px;"></a><a href="https://github.com/EricHsia7/calendar/blob/main/README.md"><img src="https://erichsia7.github.io/calendar/image/information.png" style="height:45px;margin-left:10px;margin-right:10px;"></a><a href="https://github.com/EricHsia7/calendar"><img src="https://erichsia7.github.io/calendar/image/github.png" style="height:45px;margin-left:10px;margin-right:10px;"></a>' ;
+    document.getElementById('buttonlist').innerHTML = '<a href="javascript:window.location.reload()"><img src="https://erichsia7.github.io/calendar/image/reload.png" style="height:45px;margin-left:10px;margin-right:10px;"></a><a href="javascript:readmemd()"><img src="https://erichsia7.github.io/calendar/image/information.png" style="height:45px;margin-left:10px;margin-right:10px;"></a><a href="https://github.com/EricHsia7/calendar"><img src="https://erichsia7.github.io/calendar/image/github.png" style="height:45px;margin-left:10px;margin-right:10px;"></a>' ;
     if(url.searchParams.get('display') === "1") {
 	document.getElementById('txt').innerHTML = '<p style="max-width:80%;">' + url.searchParams.get('txt') + '</p>' ;
 	}
