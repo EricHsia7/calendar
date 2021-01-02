@@ -345,10 +345,12 @@ var fns = '1' ;
 function readmemd() {
 if (fns === '1') {
 $('#gist107184641').fadeIn(333);
+$('body').delay(333).animate({'scrollTop': $('#gist107184641').offset().top },333);
 fns = '2' ;
 }
 else {
-$('#gist107184641').fadeOut(333);
+$('#gist107184641').delay(333).fadeOut(333);
+$('body').animate({'scrollTop': 0 });
 fns = '1' ;
 }
 }
