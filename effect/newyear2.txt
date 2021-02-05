@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<style>
+.newyear2 {
+position:fixed;
+left:0px;
+top:0px;
+width:100%;
+height:100%;
+background:rgba(0, 0, 0, 0.8);
+display:block;
+-webkit-backdrop-filter: blur(3px);
+backdrop-filter: blur(3px);
+}
+.newyear2txt {
+	color:#fff;
+	font-size:30px;
+	font-weight:500;
+	font-family: 'Noto Sans TC', sans-serif;
+        position:fixed;
+	top:30px;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+</style>
+<div class="newyear2">
+<center class="newyear2txt">新年快樂!</center>
+<span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)">
+<img src="https://erichsia7.github.io/calendar/image/3d4d3508.png" style="transform:scale(1);max-width:90vw;max-height:90vh;width:auto;height:auto;" id="newyear2img">
+</span>
+<a href="javascript:closedel()" style="position:fixed;bottom:30px;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:20px;">關閉</a>
+</div>
